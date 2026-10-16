@@ -33,6 +33,8 @@
 ### 5. 響應式網頁設計（RWD）
 
 本專案採用響應式網頁設計（Responsive Web Design），透過 CSS Media Queries 針對不同螢幕寬度調整頁面排版，讓網站能適應桌上型電腦、平板及手機等不同裝置，提升使用者的瀏覽體驗。
+![響應式網頁設計](screenshots/IMG_4155.jpeg)
+
 
 
 ## 四、網站展示
