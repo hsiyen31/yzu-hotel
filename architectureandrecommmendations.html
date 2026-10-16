@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+    <title>about</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="architectureandrecommmendations.css">
+		<style>
+		body{
+		margin:0;
+		background-image:url('image/background.jpg');
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		}
+		</style>
+  </head>
+  <body>
+   <nav class="navbar" id="main-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">YZU HOTEL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="booking.html">一般訂房</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="room.html">精緻住房</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="memberlogin.html">會員登入</a>
+            </li>
+						<li class="nav-item">
+          <a class="nav-link" href="becomemember.html">加入會員</a>
+        </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                訂單查詢
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="memberlogin.html">會員查詢</a></li>
+                <li><a class="dropdown-item" href="notmember.html">非會員查詢</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">回到首頁</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container my-5">
+      <ul class="nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-structure-tab" data-bs-toggle="pill"data-bs-target="#pills-structure"type="button"role="tab"aria-controls="pills-structure"aria-selected="true">
+            網頁架構
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"id="pills-content-tab"data-bs-toggle="pill"data-bs-target="#pills-content"type="button"role="tab"aria-controls="pills-content"aria-selected="false">
+            推薦網站
+          </button>
+        </li>
+      </ul>
+
+       <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-structure"
+          role="tabpanel"
+          aria-labelledby="pills-structure-tab"
+        >
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  首頁
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+								<p>當時在教表單時，我就想著該做什麼內容才可以結合這些功能，看到日期選擇器、帳號密碼、email輸入格，
+								我馬上想到的就是訂房網站，所以我以飯店為主題，找了幾間我之前住過的飯店，參考基本的飯店網頁需要的內容，製作了這個網頁。</p>
+								<ul>
+								<li>每個頁面上方都有一個主導覽列，導向各個頁面，並可以回到首頁，我將導覽列固定在網頁上方，無論滑到哪個位置都能輕鬆點取。</li>
+								<li>右下角有個固定的back to top鍵，點擊可回到上方。</li>
+								<li>左邊我設定了4個選項，為飯店的簡單介紹，分別能展開右側的不同內容，在小螢幕中左右側區塊會垂直排列。</li>
+								<li>「優惠方案」選項點開有3個選項，可分別展開不同內容。</li>
+								<li>下方飯店簡介我設置了輪播圖片，展示大概的房型，底下的「查看房型」點進去會連結到「精緻住房」頁面，可察看不同房型。</li>
+								<li>飯店位置我嵌入了元智大學的google map。</li>
+								<li>底下footer第一項會導向此頁面，第二項會導向我圖片來源的飯店網站，地址連結則會導向元智大學校網首頁新分頁。</li>
+								<li>每個按鈕都有設置懸停效果。</li>
+								</ul>
+								</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  一般訂房
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+								<ul>
+								<li>我設置了與其他頁面不同形式的導覽列，僅在小螢幕時會堆疊起來。</li>
+								<li>有五個選擇器，可分別選擇不同需求，在小螢幕中這些選擇器會垂直排列。</li>
+								<li>「選擇房型」選取後可展開不同房型的簡介頁面。</li>
+								<li>房型簡介我左側設置了輪播圖片，右側為簡要說明。</li>
+								<li>可選取早餐需求。</li>
+								<li>「查看詳情」點擊後連結該房型的詳細資訊頁面。</li>
+								<li>「立即預定」點擊後連結會員登入頁面。</li>
+								</ul>
+								</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  精緻住房
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+								<ul>
+								<li>與「一般訂房」相同形式的導覽列。</li>
+								<li>有3個選項，可分別展開不同類別的房型。</li>
+								<li>房型選項為不同的卡片，有房間的照片及價格。</li>
+								<li>房型選項在小螢幕中會垂直排列。</li>
+								<li>房型選項的「查看更多」點擊後連結該房型的詳細資訊頁面。</li>
+								</ul>
+								</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  會員登入、非會員查詢、忘記密碼、加入會員
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+								會員登入
+								<ul>
+								<li>「還不是會員嗎?」點擊後連結加入會員頁面。</li>
+								<li>有3個選項，可分別展開不同類別的房型。</li>
+								<li>有帳號、密碼輸入格，分別限制輸入格式。</li>
+								<li>「忘記密碼」點擊後連結忘記密碼頁面。</li>
+								</ul>
+								非會員查詢
+								<ul>
+								<li>有email、密碼輸入格，分別限制輸入格式。</li>
+								<li>「忘記密碼」點擊後連結忘記密碼頁面。</li>
+								</ul>
+								忘記密碼
+								<ul>
+								<li>有email輸入格、日期選擇器</li>
+								</ul>
+								加入會員
+								<ul>
+								<li>為表格樣式，單數及偶數行設置不同顏色。</li>
+								<li>有帳號、密碼、姓名、性別、行動電話、生日、email輸入格及選項，分別限制輸入格式。</li>
+								<li>「願意收到飯店特惠通知」預設為選取狀態。</li>
+								<li>「重設資料」點取可清除已填資料，「加入會員」點取會刷新頁面。</li>
+								</ul>
+								</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  各房型介紹
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+								<ul>
+								<li>最上方設置房間的輪播圖片。</li>
+								<li>輪播圖片下方設置一個固定的半透明背景文字內容，覆蓋於圖片上。</li>
+								<li>設施清單在大螢幕中3項為一行，小螢幕則會一項佔據一行。</li>
+								<li>住房須知清單為一項一行。</li>
+								<li>點擊「更多房型」可回到精緻住房頁面。</li>
+								</ul>
+								</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-content"
+          role="tabpanel"
+          aria-labelledby="pills-content-tab"
+        >
+				<div class="items-center">
+				 <video src="video.mp4" controls autoplay loop muted></video>
+				 </div>
+				<div class="text-box">
+  <div class="text-center">
+    <a href="https://uniam.jp/?srsltid=AfmBOor31bGuvJ-xXrBPA5zcKPO-X21Af1wDoWHLjwmOhj4-UFR2nIos" target="_blank">uniam</a>
+    <p>
+      這是一個日本專賣寵物用品的網站，當初在找各種有趣的網站時，第一眼就被這個網站吸引住，
+      整體網頁設計別出心裁，讓人看了很有購買意願。
+    </p>
+		</div>
+  </div>
+	<div class="text-box">
+	<div class="text-center">
+	<h3>網頁架構</h3>
+	</div>
+	<ul>
+	<li>首頁載入時有可愛的貓咪動畫。</li>
+	<li>左側有個可愛的貓咪導覽列，點擊關閉文字可回到最上方。</li>
+	<li>上方導覽列固定，點擊品牌名稱可回到首頁。</li>
+	<li>首頁輪播圖片上有個免費診斷按鈕可導向免費診斷頁面。</li>
+	<li>首頁右下方有新推出的產品訊息。</li>
+	<li>許多圖片及動畫效果。</li>
+	<li>商品使用去背照片搭配文字介紹，會自動往右滑，展示不同商品。</li>
+	<li>在品牌特色中間有個頁內導覽列，點擊會自動滑動至對應內容。</li>
+	</ul>
+	</div>
+	<div class="text-box">
+	<div class="text-center">
+	<h3>網頁優點</h3>
+	</div>
+	<ul>
+	<li>配色鮮明可愛，網頁設計整體賞心悅目。</li>
+	<li>許多可愛的小彩蛋，滑到頁面中間時有隻躺著的貓咪會隨著頁面下移從左移到右，罐頭圖片隨著下滑會變成原食材圖片。</li>
+	<li>許多圖片及動畫效果，網頁互動性高。</li>
+	<li>固定的導覽列和簡潔的選單結構，可以輕鬆跳轉到不同頁面。</li>
+	<li>響應式設計，在手機上也能流暢瀏覽。</li>
+	</ul>
+	</div>
+	<div class="text-box">
+	<div class="text-center">
+	<h3>網頁缺點</h3>
+	</div>
+	<ul>
+	<li>點擊品牌名稱可回到首頁，但我認為這不太容易發現，可能導致用戶不知道如何回首頁。</li>
+	<li>點擊關閉可回到上方，但我也覺得不容易發現，可以增加更直覺的back to top。</li>
+	<li>只支援日文版本，不太方便閱覽。</li>
+	<li>有些重要訊息需要經過太多跳轉，使用上方便性可再加強。</li>
+	<li>首頁圖片和內容加載速度較慢，有點影響瀏覽體驗。</li>
+	</ul>
+	</div>
+
+        </div>
+      </div>
+
+
+<a href="#" class="btn btn-primary rounded-pill back-to-top">Back To Top</a>
+		</main>
+ <footer>
+ <br>
+      <p><a href="architectureandrecommmendations.html">關於此網站</a></p>
+			<p>圖片來源、資訊參考:</p>
+			<p><a href="http://jiaosi.leschamps.com.tw/zh_TW"target="_blank">麗翔飯店礁溪館</a></p>
+			<p>聯絡我們</p>
+			<p>電話:03-4638800|傳真:03-4638800|Line:@hotel.yzu</p>    
+			<p>地址：<a href="https://www.yzu.edu.tw/index.php/tw/"target="_blank">320桃園市中壢區遠東路135號</a></p>
+   <div class="design">
+	 <p>©YZU HOTEL All Rights Reserved.</p>
+	 <p>Deisgn by:1131651</p>
+		</div>
+		</footer>   
+		</body>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>

@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+    <title>YZU HOTEL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="index.css">
+		<style>
+		body{
+		margin:0;
+		background-image:url('image/background.jpg');
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		}
+		</style>
+  </head>
+  <body>
+	<div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">網頁架構、推薦網頁</div>
+            <div class="modal-body">網頁架構、推薦網頁在頁面最底部「關於此網頁」</div>
+            <div class="modal-footer">
+                <button id="closeModal">關閉</button>
+            </div>
+        </div>
+    </div>
+   <nav class="navbar" id="main-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">YZU HOTEL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="booking.html">一般訂房</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="room.html">精緻住房</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="memberlogin.html">會員登入</a>
+            </li>
+						<li class="nav-item">
+          <a class="nav-link" href="becomemember.html">加入會員</a>
+        </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                訂單查詢
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="memberlogin.html">會員查詢</a></li>
+                <li><a class="dropdown-item" href="notmember.html">非會員查詢</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">回到首頁</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+     <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="left-block">
+                <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#discount" type="button" role="tab">優惠方案</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#facility" type="button" role="tab">飯店設施</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#food" type="button" role="tab">餐飲美饌</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#about" type="button" role="tab">關於我們</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+				<div class="right-block">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="discount" role="tabpanel">
+								<div class="nav-container">
+                  <ul class="nav nav-underline">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#promo1" data-bs-toggle="tab">壽星專案</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#promo2" data-bs-toggle="tab">學生專案</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#promo3" data-bs-toggle="tab">團體專案</a>
+                  </li>
+                </ul>
+								</div>
+                <div class="tab-content">
+                  <div id="promo1" class="tab-pane fade show active">
+                    <div class="col">
+										<div class="card h-100">
+										<div class="card-body">
+        <h5 class="card-title">壽星專案</h5>
+        <p class="card-text">
+        <p>特別的日子，為您獻上我們最真誠的祝福，快來預約專屬您的慶祝之旅吧！</p>
+				<hr>
+				優惠內容		
+				<ul>
+				<li>特色溫泉客房住宿一晚</li>
+				<li>健康活力早餐每人一客</li>
+				<li>精緻迎賓茶點</li>
+				<li>贈「生日禮盒」每房一份</li>
+				<li>當月壽星入住，享全館房型折價$500之專屬優惠</li>
+				</ul>
+				<hr>
+				注意事項
+				<ul>
+				<li>優惠期間：即日起至2025/03/31止 (12/31、1/25-2/2、2/28-3/2不適用)</li>
+				<li>本飯店保有活動更改之權利，專案售價及內容如有變動，恕不另行通知。</li>
+				<li>本專案不與其他優惠方案合併使用。</li>
+				<li>當月壽星僅適用折抵一房。</li>
+				<li>須出示身分證或其他可辨認之身分證件</li>
+				<li>本專案僅限電話預訂方可享有(網路訂房不適用)。</li>
+				</ul>
+				</p>
+    </div>
+  </div>
+	</div>
+   </div>
+                  <div id="promo2" class="tab-pane fade">
+                    <div class="col">
+										<div class="card h-100">
+										<div class="card-body">
+        <h5 class="card-title">學生專案</h5>
+        <p class="card-text">
+				<p>暫時拋開忙碌，走出戶外，沐浴和煦陽光，盡情享受浪漫悠閒輕旅行！</p>
+				<hr>
+				優惠內容
+				<ul>
+				<li>特色溫泉客房住宿一晚</li>
+				<li>健康活力早餐每人一客</li>
+				<li>精緻紀念品一份</li>
+				<li>精緻迎賓茶點</li>
+				<li>「旅遊車資補助」每房NT$400 (即:依專案價再扣抵NT$400)</li>
+				<hr>
+				</ul>
+				注意事項
+				<ul>
+				<li>優惠期間：即日起至2025/03/31止 (12/31、1/25-2/2、2/28-3/2不適用)</li>
+				<li>本飯店保有活動更改之權利，專案售價及內容如有變動，恕不另行通知。</li>
+				<li>本專案不與其他優惠方案合併使用。</li>
+				<li>須出示學生證或其他可辨認之身分證件</li>
+				<li>本專案僅限電話預訂方可享有(網路訂房不適用)。</li>
+				</ul>
+				</p>
+    </div>
+  </div>
+	</div>
+                  </div>
+                  <div id="promo3" class="tab-pane fade">
+                   <div class="col">
+										<div class="card h-100">
+										<div class="card-body">
+        <h5 class="card-title">團體專案</h5>
+        <p class="card-text">
+				<p>結伴同遊，一同享受愜意的幸福時光!</p>
+				<hr>
+				優惠內容
+				<ul>
+				<li>特色溫泉客房住宿一晚</li>
+				<li>健康活力早餐每人一客</li>
+				<li>精緻迎賓茶點</li>
+				<li>「旅遊車資補助」每房NT$400 (即:依專案價再扣抵NT$400)</li>
+				<hr>
+				</ul>
+				注意事項
+				<ul>
+				<li>優惠期間：即日起至2025/03/31止 (12/31、1/25-2/2、2/28-3/2不適用)</li>
+				<li>本飯店保有活動更改之權利，專案售價及內容如有變動，恕不另行通知。</li>
+				<li>本專案不與其他優惠方案合併使用。</li>
+				<li>預訂任兩間房型(包含)以上可享此優惠</li>
+				<li>本專案僅限電話預訂方可享有(網路訂房不適用)。</li>
+				</ul>
+				</p>
+    </div>
+  </div>
+	</div>
+                  </div>
+                </div>
+                </div>
+								 	 
+                <div class="tab-pane fade" id="facility" role="tabpanel">
+								<div class="col">
+										<div class="card h-100">
+										<div class="card-body">
+        
+        <p class="card-text">
+				<h3>泡湯設施</h3>
+				<p>沉浸在清澈道地的溫泉戲水池裡， 讓泉水為您褪去全身的疲憊；貼心的不老溫泉按摩池更體貼地為您鬆弛緊繃的身心。</p>
+				
+         <ul>
+				<li>A區開放時間 07:00-23:00 (每週一、週四清洗，上午清洗時段暫停開放)</li>
+				<li>B區開放時間 09:00-11:30、15:00-17:30、19:00-22:00(每週二、週五清洗，上午清洗時段暫停開放)</li>
+				<li>泡湯項目含四季溫泉戲水池/不老溫泉按摩池/能量烤箱。</li>
+				<li>請著泳衣、泳帽(池畔已備有浴巾)。</li>
+				<li>如需緊急清洗則暫停開放，恕不另行通知。</li>
+			</ul>
+			<hr>
+			<h3>娛樂設施</h3>
+										<p>房客專屬的撞球室、乒乓球室、電玩區、兒童遊戲室...等多樣化的設施，是您休閒娛樂的最佳去處。</p>
+										
+                <ul>
+							<li>撞球室/乒乓球室/電玩區/兒童遊戲室  開放時間 09:00-23:00)</li>
+							<li>地若有其他用途，則暫停開放，恕不另行通知。</li>
+			</ul>
+			</p>
+								</div>
+								</div>
+								</div>
+								</div>
+                <div class="tab-pane fade" id="food" role="tabpanel">
+								 <div class="col">
+										<div class="card h-100">
+										<div class="card-body">
+        
+        <p class="card-text">
+				<h3>二樓景觀餐廳</h3>
+				<p>一道道主廚精心烹調的美饌佳餚，開放式的用餐空間，面向戲水池的別緻落地窗台，提供您味覺與視覺的極佳享受。</p>
+				<hr>
+				<h3>早餐開放時間</h3>
+				<ul>
+							<li>【平日】AM7:30－AM9:30</li>
+							<li>【假日】AM7:30－AM10:00</li>
+							<li>費用：可選擇預訂[包含早餐]的價格方案。</li>
+							<li>若額外加購早餐：每客$275</li>
+			</ul>
+				</p>
+    </div>
+  </div>							 
+    </div>
+		</div>
+		
+ 
+                <div class="tab-pane fade" id="about" role="tabpanel">
+								<div class="col">
+								<div class="card h-100">
+										<div class="card-body">
+                    <h3>關於我們</h3>
+                    <p>洋溢歐洲風情的青銅屋瓦與花崗石的石材構築出線條俐落的極簡風貌。</p>
+										<p>大廳挑高七米，讓人有完全舒展的輕鬆感，親切而專業的迎賓人員更讓出門在外的旅人忘卻舟車勞頓的疲憊。</p>
+										<p>獨棟十二層樓高的歐風建築，環繞充滿設計感的庭園擺設，風味立現。</p>
+									  <p>步下後方花園的螺旋梯，緊接著新擴建的峇里島風情溫泉戲水池、四季溫泉按摩池、能量水晶烤箱等，濃濃的熱帶風情迎面而來。</p>
+										<p>客房入住即可獨享世界知名的碳酸氫鈉溫泉，也就是俗稱的「美人湯」。讓您在身體獲得紓展的同時也讓心靈獲得解放。</p>
+										<p>「一家值得去的旅館，能讓人回味的旅館」是我們的經營理念，希望帶給顧客更美好的旅遊經驗。</p>
+										<p>為此，館內設施定期調整，隨著季節更迭，推出最優質也最划算的套裝旅遊行程。</p>	
+										</div>
+									</div>
+								</div>										
+                </div>
+					</div>
+								
+
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="text-box">
+<h2 class="text-center">飯店簡介</h2>
+<br>
+<div class="d-flex align-items-center room-preview">
+        <div class="carousel-container me-3">
+            <div id="roomCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/dawnsuite1.png" class="d-block w-100" alt="Room Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/cloudvisitsuite1.png" class="d-block w-100" alt="Room Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/gorgeoussuperior1.png" class="d-block w-100" alt="Room Image 3">
+                    </div>
+										<div class="carousel-item">
+                        <img src="image/yusensuite3.jpg" class="d-block w-100" alt="Room Image 3">
+                    </div>
+										<div class="carousel-item">
+                        <img src="image/starsuite4.jpg" class="d-block w-100" alt="Room Image 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#roomCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#roomCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>  
+        <div class="text-container">
+            <p class="room-description">
+                <p>-遇最好的時光 見最美的地方-
+								<br>
+								<p>一棟柔和的米白色建築，佇立在人來人往的中壢市區，以極簡質樸的侘寂與溫暖舒適的色調，打造了一處靜謐舒適的旅人居所。室內以低飽和的色彩做搭配，堆疊出和諧雅致的空間。每個小細節，都藏著意想不到的驚喜，供您細細品味。</p>
+								<br>
+								<p>飯店電話：03-4638800</p>
+								<p>飯店地址：320桃園市中壢區遠東路135號</p>
+								<p>入住時間：16:00之後</p>
+								<p>退房時間：12:00之前</p>
+            </p>
+            <a href="room.html" class="my-button">查看房型</a>
+        </div>
+    </div>
+		</div>
+<hr>
+<div class="text-box">
+<section class="section-content">
+<div class="section-header">
+<h2 class="text-center">飯店位置</h2>
+</div>
+<div class="items-center">
+<iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.876466655706!2d121.26086727537454!3d24.970317277857685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681f5490d43fcd%3A0x186eb5a7e52b332b!2z5YWD5pm65aSn5a24!5e0!3m2!1szh-TW!2stw!4v1729329707675!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+  </div>
+</section>
+</div>
+<a href="#" class="btn btn-primary rounded-pill back-to-top">Back To Top</a>
+		</main>
+ <footer>
+ <br>
+      <p><a href="architectureandrecommmendations.html">關於此網站</a></p>
+			<p>圖片來源、資訊參考:</p>
+			<p><a href="http://jiaosi.leschamps.com.tw/zh_TW"target="_blank">麗翔飯店礁溪館</a></p>
+			<p>聯絡我們</p>
+			<p>電話:03-4638800|傳真:03-4638800|Line:@hotel.yzu</p>    
+			<p>地址：<a href="https://www.yzu.edu.tw/index.php/tw/"target="_blank">320桃園市中壢區遠東路135號</a></p>
+   <div class="design">
+	 <p>©YZU HOTEL All Rights Reserved.</p>
+	 <p>Deisgn by:1131651</p>
+		</div>
+		</footer> 
+<script>
+       
+        const modal = document.getElementById('successModal');
+        const closeModalButton = document.getElementById('closeModal');
+
+        
+        window.onload = () => {
+            modal.style.display = 'flex'; 
+        };
+
+      
+        
+        closeModalButton.addEventListener('click', () => {
+            modal.style.display = 'none'; 
+        });
+
+        
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>		
+		</body>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

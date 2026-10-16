@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">  
+    <title>become a member</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<link rel="stylesheet" href="becomemember.css">
+		</head>
+	<body>
+	<nav class="navbar  bg-body-tertiary" id="nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">YZU HOTEL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="booking.html">一般訂房</a>
+        </li>
+				<li class="nav-item">
+          <a class="nav-link" href="room.html">精緻住房</a>
+        </li> 
+				<li class="nav-item">
+          <a class="nav-link" href="memberlogin.html">會員登入</a>
+        </li>
+				<li class="nav-item">
+          <a class="nav-link" href="becomemember.html">加入會員</a>
+        </li>
+				<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            訂單查詢
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="memberlogin.html">會員查詢</a></li>
+            <li><a class="dropdown-item" href="notmember.html">非會員查詢</a></li>
+          </ul>
+        </li>       
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">回到首頁</a>
+        </li>       
+      </ul>
+    </div>
+  </div>
+</nav>
+	<main>
+	<h2>加入會員</h2>
+	<hr>
+	<p>為確保個人隱私及符合個資法規範，帳號與密碼請避免使用身分證字號，15字內，限用大小寫英文與數字，不能有空白。<p>
+	<form class="form-container" id="registerform">
+	<div class="form-group">
+                <label for="account">帳號</label>
+                <input type="text" id="account" name="account" placeholder="輸入帳號">
+            </div>
+            <div class="form-group">
+                <label for="password">密碼</label>
+                <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$" title="輸入至少8位，須包含大小寫字母及數字" required>
+								<div class="invalid-feedback">密碼須至少8位，包含大小寫字母及數字。</div>
+            </div>
+            <div class="form-group">
+                <label for="name">姓名</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+    <label for="gender">性別</label>
+    <div class="flex-container">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+            <label class="form-check-label" for="male">男</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+            <label class="form-check-label" for="female">女</label>
+        </div>
+    </div>
+</div>
+            <div class="form-group">
+                <label for="tel">行動電話</label>
+                <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" placeholder="請勿輸入任何符號">
+								<div class="invalid-feedback">請符合行動電話格式</div>
+            </div>
+            <div class="form-group">
+                <label for="date">出生日期</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+                <label for="email">E-MAIL</label>
+                <input type="email" id="email" name="email" pattern=".+@hotmail\.com" title="請符合要求的格式" placeholder="E-MAIL">
+            </div>
+						</form>
+	<br>
+	<div class="items-center">
+	<div class="flex-container">
+	<input type="checkbox" name="checkbox" value="yes" checked size="12">願意收到飯店特惠通知
+	</div>
+	</div>
+	<div class="items-center">
+	<div class="button-container">
+	<button class="my-button" type="reset" form="registerform">重設資料</button>
+	<button class="my-button" type="submit"form="registerform">加入會員</button>
+	</div>
+	</div>
+	<a href="#" class="btn btn-primary rounded-pill back-to-top">Back To Top</a>
+	</main>
+	<footer>
+ <br>
+      <p><a href="architectureandrecommmendations.html">關於此網頁</a></p>
+			<p>圖片來源、資訊參考:</p>
+			<p><a href="http://jiaosi.leschamps.com.tw/zh_TW"target="_blank">麗翔飯店礁溪館</a></p>
+			<p>聯絡我們</p>
+			<p>電話:03-4638800|傳真:03-4638800|Line:@hotel.yzu</p>    
+			<p>地址：<a href="https://www.yzu.edu.tw/index.php/tw/"target="_blank">320桃園市中壢區遠東路135號</a></p>
+   <div class="design">
+	 <p>©YZU HOTEL All Rights Reserved.</p>
+	 <p>Deisgn by:1131651</p>
+		</div>
+		</footer>  
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	</body>
+	</html>
